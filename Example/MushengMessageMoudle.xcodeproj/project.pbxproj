@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		0034F4692B00E4A155261B96 /* Pods-MushengMessageMoudle_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushengMessageMoudle_Example.debug.xcconfig"; path = "Target Support Files/Pods-MushengMessageMoudle_Example/Pods-MushengMessageMoudle_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		127CBAF27D629F7B64377123 /* Pods-MushengMessageMoudle_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushengMessageMoudle_Example.release.xcconfig"; path = "Target Support Files/Pods-MushengMessageMoudle_Example/Pods-MushengMessageMoudle_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2A6AB2A1D8B4153B054317D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2A6AB2A1D8B4153B054317D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MushengMessageMoudle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MushengMessageMoudle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6E08884EA1772F1B504FC58D /* Pods_MushengMessageMoudle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushengMessageMoudle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EF6DD1F47893CC9CBCA40A /* Pods-MushengMessageMoudle_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushengMessageMoudle_Tests.release.xcconfig"; path = "Target Support Files/Pods-MushengMessageMoudle_Tests/Pods-MushengMessageMoudle_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8D6483846740DA51F1207B29 /* MushengMessageMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MushengMessageMoudle.podspec; path = ../MushengMessageMoudle.podspec; sourceTree = "<group>"; };
-		95C580C1DBE0F8523EEDB670 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8D6483846740DA51F1207B29 /* MushengMessageMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MushengMessageMoudle.podspec; path = ../MushengMessageMoudle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95C580C1DBE0F8523EEDB670 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BAEF4248ADAA14407C642681 /* Pods_MushengMessageMoudle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushengMessageMoudle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54B25AE2606569DC1F378D2 /* Pods-MushengMessageMoudle_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushengMessageMoudle_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MushengMessageMoudle_Tests/Pods-MushengMessageMoudle_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				D54B25AE2606569DC1F378D2 /* Pods-MushengMessageMoudle_Tests.debug.xcconfig */,
 				78EF6DD1F47893CC9CBCA40A /* Pods-MushengMessageMoudle_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2PPCLZL75Y;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2PPCLZL75Y;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +294,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MushengMessageMoudle_Example/Pods-MushengMessageMoudle_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MushengMessageMoudle/MushengMessageMoudle.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MushengMessageMoudle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,6 +482,7 @@
 			baseConfigurationReference = 0034F4692B00E4A155261B96 /* Pods-MushengMessageMoudle_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2PPCLZL75Y;
 				INFOPLIST_FILE = MushengMessageMoudle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +498,7 @@
 			baseConfigurationReference = 127CBAF27D629F7B64377123 /* Pods-MushengMessageMoudle_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2PPCLZL75Y;
 				INFOPLIST_FILE = MushengMessageMoudle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D54B25AE2606569DC1F378D2 /* Pods-MushengMessageMoudle_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2PPCLZL75Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78EF6DD1F47893CC9CBCA40A /* Pods-MushengMessageMoudle_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2PPCLZL75Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/dxs_high@icloud.com/MushengMessageMoudle'
+  s.homepage         = 'https://github.com/dxsGitHub/MushengMessageMoudle'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dxs_high@icloud.com' => 'dxs_high@icloud.com' }
-  s.source           = { :git => 'https://github.com/dxs_high@icloud.com/MushengMessageMoudle.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dxsGitHub/MushengMessageMoudle.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
@@ -39,4 +39,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit'      #自动布局
+  
 end
